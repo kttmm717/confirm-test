@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::middleware('auth')->group(function() {
+    Route::get('/admin', [AuthController::class, 'index']);
 });
+
+Route::post('/register', [RegisterController::class, 'store']);
+Route::get('/search', [ContactController::class, 'search']);
+Route::delete('/delete', [ContactController::class, 'delete']);
+Route::get('/export', [ContactController::class, 'export']);
+
+Route::get('/', [ContactController::class, 'index']);
+Route::post('/confirm', [ContactController::class, 'confirm']);
+Route::post('/thanks', [ContactController::class, 'thanks']);
+
+
+
+

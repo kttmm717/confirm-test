@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header__inner {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    text-align: center;
+}
+.header__logo {
+    color: #7b6353;
+    font-size: 30px;
+    padding-left: 50px;
+}
+.contact {
+    border-top: 1px solid #ddd;
+}
+.contact__inner {
+    max-width: 1230px;
+    margin: 40px auto;
+}
+.contact-title {
+    text-align: center;
+    color: #7b6353;
+    font-weight: normal;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.contact-table {
+    width: 80%;
+    margin: 0 auto;
+    color: #7b6353;
+}
+.contact-table__row {
+    height: 80px;
+}
+.contact-table__header {
+    width: 35%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+}
+.detail {
+    vertical-align: top;
+    padding-top: 20px;
+}
+.contact-table__date {
+    width: 65%;
+}
+.error {
+    color: red;
+    font-size: 16px;
+}
+.confirm-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+.confirm-btn button {
+    background-color: #7b6353;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input,select,textarea {
+    background-color: #eee;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    color: #7b6353;
+}
+.input-name {
+    display: flex;
+    justify-content: space-between;
+}
+.input-name input {
+    width: 45%;
+}
+.input-gender input:nth-child(n+2) {
+    margin-left: 40px;
+}
+.input-gender input {
+    margin-right: 5px;
+}
+.input-email {
+    width: 100%;
+}
+.tel-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.address-input {
+    width: 100%;
+}
+.building-input {
+    width: 100%;
+}
+.category-select {
+    width: 50%;
+}
+.detail-textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+}
+.span {
+    color: red;
+    padding-left: 5px;
+}

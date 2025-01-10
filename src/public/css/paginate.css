@@ -1,0 +1,29 @@
+.ui.pagination.menu .item {
+    color: #7b6353;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    text-align: center;
+    gap: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ui.pagination.menu .active.item {
+    background-color: #7b6353;
+    color: white;
+}
+.front {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.back {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.ui.pagination.menu {
+    display: flex;
+}

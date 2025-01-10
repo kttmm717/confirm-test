@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header__inner {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    color: #7b6353;
+    font-size: 30px;
+    padding-left: 50px;
+}
+.header__link button {
+    font-size: 12px;
+    border: 1px solid #cca58d;
+    color: #cca58d;
+    background-color: #eee;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.admin {
+    border-top: 1px solid #ddd;
+}
+.admin__inner {
+    max-width: 1230px;
+    margin: 40px auto;
+}
+.addmin-title {
+    text-align: center;
+    color: #7b6353;
+    font-weight: normal;
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+.search-form {
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-form__item {
+    height: 100%;
+}
+.keyword {
+    width: 28%;
+}
+.search {
+    width: 7%;
+    text-align: center;
+}
+.reset {
+    width: 10%;
+}
+.keyword input,
+.gender select,
+.category select,
+.date input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: #7b6353;
+    background-color: #f7f6f6;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.search button {
+    width: 100%;
+    height: 100%;   
+    color: white;
+    background-color: #7b6353;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+.reset a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;   
+    color: white;
+    background-color: #dfd2cb;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.middle-row {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.admin-table {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.admin-table__row {
+    border-bottom: 1px solid #ddd;
+}
+.admin-table__header {
+    background-color: #7b6353;
+    color: white;
+    text-align: left;
+    height: 40px;
+    padding-left: 50px;
+    font-weight: normal;
+}
+.admin-table__date {
+    height: 60px;
+    padding-left: 50px;
+    color: #7b6353;
+}
+.admin-table__date:first-child {
+    border-left: 1px solid #ddd;
+}
+.admin-table__date:last-child {
+    border-right: 1px solid #ddd;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 7%;
+    left: 20%;
+    width: 60%;
+    height: 90%;
+    background-color: white;
+    box-shadow: 1px 1px 5px #cecece;
+}
+.modal__inner {
+    width: 80%;
+    margin: 10% auto;
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b4a18b;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.modal-table {
+    width: 100%;
+}
+.modal-table__row {
+    line-height: 50px;
+}
+.modal-table__header {
+    text-align: left;
+}
+.modal-table__date {
+    padding-left: 20px;
+}
+.delete-form {
+    margin-top: 70px;
+    text-align: center;
+}
+.delete-form button {
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(189, 71, 32);
+    border: none;
+    padding: 5px 15px;
+    opacity: 0.9;
+}
+.delete-form button:hover {
+    opacity: 1;
+}
+.open {
+    background-color: white;
+    color: #b4a18b;
+    border: 1px #ddd solid;
+    padding: 3px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.export-form button {
+    text-decoration: none;
+    color: #7b6353;
+    background-color: #efeae8;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
