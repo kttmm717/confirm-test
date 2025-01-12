@@ -27,8 +27,18 @@ class ContactController extends Controller
         if($request->input('back') == 'back') {
             return redirect('/')->withInput();
         }
-        $contact = $request->only(['first_name', 'last_name', 'gender', 'email', 'tel',  'address', 'building', 'category_id', 'detail']);
-        Contact::create($contact);
+        $tel = $request->input('tel1').$request->input('tel2').$request->input('tel3');
+        Contact::create([
+            'first_name' => $request->input('first_name'),
+            'last_name' => $request->input('last_name'),
+            'gender' => $request->input('gender'),
+            'email' => $request->input('email'),
+            'tel' => $tel,
+            'address' => $request->input('address'),
+            'building' => $request->input('building'),
+            'category_id' => $request->input('category_id'),
+            'detail' => $request->input('detail')
+        ]);
         return view('thanks');
     }
 

@@ -56,7 +56,7 @@
                             <td class="confirm-date">
                                 <input type="hidden" name='tel1' value="{{$contact['tel1']}}">
                                 <input type="hidden" name='tel2' value="{{$contact['tel2']}}">
-                                <input type="hidden" name='tel3' value="{{$contact['tel2']}}">
+                                <input type="hidden" name='tel3' value="{{$contact['tel3']}}">
                                 {{$tel}}
                             </td>
                         </tr>

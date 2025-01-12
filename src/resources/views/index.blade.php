@@ -77,9 +77,7 @@
                             <th class="contact-table__header">
                                 <div class="tel-item">
                                     <p>電話番号<span class="span">※</span></p>
-                                    @error('tel')
-                                    <p class="error">{{$message}}</p>
-                                    @enderror
+                                    <p class="error-tel">@errorany('tel1, tel2, tel3')</p>
                                 </div>
                             </th>
                             <td class="contact-table__date">
